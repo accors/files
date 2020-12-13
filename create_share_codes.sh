@@ -5,38 +5,28 @@ export LC_ALL=C
 
 ## 按以下格式修改为自己的种豆得豆互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesBean="pr4xrl7utr2rzvrrx7w3jsu2yq
-liqkt2qul4uvepq7hw6fs2cele
-t7obxmpebrxkcc2fstobb5hncoidwgv5vlnrrbq
-olmijoxgmjutyz3bqqos2bglut7umunpzuehbzy"
+ShareCodesBean=""
 
 ## 按以下格式修改为自己的东东农场互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesFarm="91da44fbd6e24c199d268cf8ca679b16
-cd12f662f26d4e00bd3395c12a62a849
-dd1272c99fa7405b82cf4beb3092a0c0
-e05ac5f5794e42b48a429cfd6a25d8d9"
+ShareCodesFarm=""
 
 ## 按以下格式修改为自己的东东萌宠互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesPet="MTE1NDAxNzcwMDAwMDAwMzk3MzQ5Njk=
-MTAxODc2NTEzNTAwMDAwMDAxMjM5MDI2Nw==
-MTAxODc2NTEzMjAwMDAwMDAzMTc3NTYwNQ==
-MTE1NDQ5OTIwMDAwMDAwMzkwMDI4OTc=
-MTAxODc2NTEzNTAwMDAwMDAyMzE2NjMwNQ=="
+ShareCodesPet=""
 
 ## 按以下格式修改为自己的东东工厂互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesDDFactory="P04z54XCjVWnYaS5m9cZzShgiUgyoC4SlPTww"
+ShareCodesDDFactory=""
 
 ## 按以下格式修改为自己的京喜工厂互助码，每个互助码间使用换行来分开，首尾一对引号
 ## 如不需要提交此互助码，删除互助码即可
-ShareCodesJXFactory="ybvQKsRAU1rYPQpzCn1kxw=="
+ShareCodesJXFactory=""
 
 ## 如果你希望在向服务器提交互助码后反馈提交结果，请补充ServerChan的SCKEY
 ## 教程：http://sc.ftqq.com/3.version
 ## 我懒，只做了ServerChan的通知渠道，其他不想做
-SCKEY="SCU109790Tbaf9414cade830f71fa97a8bf4b5cc615f3b38ba4d605"
+SCKEY=""
 
 
 ################################## 以下勿动 ##################################
