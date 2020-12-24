@@ -27,6 +27,10 @@ ShareCodesJXFactory=""
 ## 如不需要提交此互助码，删除互助码即可
 ShareCodesJDZZ=""
 
+## 按以下格式修改为自己的疯狂的JOY互助码，每个互助码间使用换行来分开，首尾一对引号
+## 如不需要提交此互助码，删除互助码即可
+ShareCodesCrazyJOY=""
+
 ## 如果你希望在向服务器提交互助码后反馈提交结果，请补充ServerChan的SCKEY
 ## 教程：http://sc.ftqq.com/3.version
 ## 我懒，只做了ServerChan的通知渠道，其他不想做
@@ -37,8 +41,8 @@ SCKEY=""
 ## 路径
 ShellDir=$(cd $(dirname $0); pwd)
 RootDir=$(cd $(dirname $0); cd ..; pwd)
-ScriptsDir=${RootDir}/scripts
-LogDir=${RootDir}/log
+ScriptsDir=${RootDir}/jd/scripts
+LogDir=${RootDir}/jd/log
 LogFile=${LogDir}/create_share_codes/create_share_codes.log
 CreateURLBean="http://api.turinglabs.net/api/v1/jd/bean/create/"
 CreateURLFarm="http://api.turinglabs.net/api/v1/jd/farm/create/"
@@ -46,6 +50,7 @@ CreateURLPet="http://api.turinglabs.net/api/v1/jd/pet/create/"
 CreateURLJXFactory="http://api.turinglabs.net/api/v1/jd/jxfactory/create/"
 CreateURLDDFactory="http://api.turinglabs.net/api/v1/jd/ddfactory/create/"
 CreateURLJDZZ="https://code.chiang.fun/api/v1/jd/jdzz/create/"
+CreateURLCrazyJOY="https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/"
 URLServerChan="https://sc.ftqq.com/"
 
 ## 删除旧的日志，创建新的日志
@@ -146,6 +151,21 @@ function CreateCodesJDZZ {
   echo -e "\n\n" >> ${LogFile}
 }
 
+## 提交疯狂的JOY互助码
+function CreateCodesCrazyJOY {
+  echo -e "疯狂的JOY：\n\n" >> ${LogFile}
+  for Code in ${ShareCodesCrazyJOY}
+  do
+    sleep 10
+    wget -q -O ${Code} ${CreateURLCrazyJOY}${Code}
+    echo -n "${Code}: " >> ${LogFile}
+    cat ${Code} >> ${LogFile}
+    echo -e "\n\n" >> ${LogFile}
+    rm -f ${Code}
+  done
+  echo -e "\n\n" >> ${LogFile}
+}
+
 ## 向服务器提交互助码
 if [ -n "${ShareCodesBean}" ]; then
   CreateCodesBean
@@ -171,6 +191,9 @@ if [ -n "${ShareCodesJDZZ}" ]; then
   CreateCodesJDZZ
 fi
 
+if [ -n "${ShareCodesCrazyJOY}" ]; then
+  CreateCodesCrazyJOY
+fi
 ## 向方糖发送消息
 if [ -n "${SCKEY}" ]; then
   desp=$(cat ${LogFile})
