@@ -1,5 +1,5 @@
 #!/bin/bash
-##版本: v20210208
+##版本: v20210210
 sed -i 's,http://jd.turinglabs.net,http://jdhz.eachell.com,g' ${JD_DIR}/scripts/jd_dreamFactory.js
 sed -i 's,https://gitee.com/lxk0301/updateTeam/raw/master/jd_updateFactoryTuanId.json,http://jdhz.eachell.com/api/v1${JD_DIR}/tuanid/read/5,g' ${JD_DIR}/scripts/jd_dreamFactory.js
 sed -i 's,https://gitee.com/shylocks/updateTeam/raw/main/jd_updateFactoryTuanId.json,http://jdhz.eachell.com/api/v1${JD_DIR}/tuanid/read/5,g' ${JD_DIR}/scripts/jd_dreamFactory.js
