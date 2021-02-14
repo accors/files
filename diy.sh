@@ -18,7 +18,7 @@ sed -i 's,https://code.chiang.fun,http://jdhz.eachell.com,g' ${JD_DIR}/scripts/j
 sed -i 's,http://jd.turinglabs.net,http://jdhz.eachell.com,g' ${JD_DIR}/scripts/jd_sgmh.js
 #sed -i 's,http://jd.turinglabs.net,http://jdhz.eachell.com,g' ${JD_DIR}/scripts/jd_immortal.js
 sed -i 's,https://code.chiang.fun,http://jdhz.eachell.com,g' ${JD_DIR}/scripts/jd_cash.js
-sed -i 's,https://code.chiang.fun,http://jdhz.eachell.com,g' ${JD_DIR}/scripts/jd_newYearMoney.js
-sed -i '/const readShareCodeRes = await readShareCode();/i\\$.newShareCodes = [];' ${JD_DIR}/scripts/jd_newYearMoney.js
+#sed -i 's,https://code.chiang.fun,http://jdhz.eachell.com,g' ${JD_DIR}/scripts/jd_newYearMoney.js
+#sed -i '/const readShareCodeRes = await readShareCode();/i\\$.newShareCodes = [];' ${JD_DIR}/scripts/jd_newYearMoney.js
 sed -i 's,https://code.chiang.fun,http://jdhz.eachell.com,g' ${JD_DIR}/scripts/jd_global.js
 sed -i '/const readShareCodeRes = await readShareCode();/i\\$.newShareCodes = [];' ${JD_DIR}/scripts/jd_global.js
