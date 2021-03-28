@@ -1,0 +1,11 @@
+# NAME: Emby
+# AUTHOR: accors
+# 关键字匹配
+# 1.花云Emby服务器
+HOST, emby.flowercloud.yt, Flower
+# 2.终点站Emby
+DOMAIN-SUFFIX, emby.wtf, Emby
+# 3.普拉斯公益服
+DOMAIN-SUFFIX, plusmedia.site, PROXY
+DOMAIN-SUFFIX, xeton.dev, PROXY
+# 结束。
