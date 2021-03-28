@@ -8,4 +8,6 @@ DOMAIN-SUFFIX, emby.wtf, Emby公益服
 # 3.普拉斯公益服
 DOMAIN-SUFFIX, plusmedia.site, PROXY
 DOMAIN-SUFFIX, xeton.dev, PROXY
+# 4.EXFLUX Emby服务器
+DOMAIN-SUFFIX, emby.men, Plus-EXF
 # 结束。
