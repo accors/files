@@ -1,0 +1,4 @@
+#!name=Excluded Routes
+#!desc=VIF排除多余路由
+[General]
+tun-excluded-routes = 0.0.0.0/0
