@@ -14,7 +14,7 @@ const $ = new Env(`自动登录中返回`);
       let body = $response.body
       body = body.replace('自动登录中', '2次自动返回等待时间有点长')
       if (body.indexOf('</script>') > 0) {
-        body = body.replace('</script>', 'setTimeout(()=>window.history.back(),3000); </script>')
+        body = body.replace('</script>', 'setTimeout(()=>window.history.back(),10000); </script>')
         $.done({body})
       }
     }
