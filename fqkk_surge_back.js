@@ -2,7 +2,7 @@
 /*=
 
 自动登录中返回 = type=http-response,pattern=https://open\.weixin\.qq\.com/connect/oauth2/authorize\?.+redirect\.php,requires-body=1,max-size=0,script-path=fqkk_surge_back.js
-
+原作者ztxtop大佬，本人修改后自用。
 [mitm]
 hostname = open.weixin.qq.com
 */
