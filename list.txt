@@ -1,0 +1,2 @@
+*.miwifi.com
+*.jd.com
