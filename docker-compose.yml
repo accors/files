@@ -1,0 +1,18 @@
+version: "2.0"
+services:
+  jd:
+    image: accors/dhhd:v1
+    container_name: jd
+    restart: always
+    tty: true
+    network_mode: bridge
+    hostname: jd
+    volumes:
+      - ./config:/jd/config
+      - ./log:/jd/log
+      - ./own:/jd/own
+      - ./scripts:/jd/scripts
+      - ./jbot/diy:/jd/jbot/diy
+    environment: 
+      - ENABLE_HANGUP=false  # 是否在启动容器时自动启动挂机程序
+      - ENABLE_TG_BOT=true  # 是否在启动容器时自动启动TG BOT
