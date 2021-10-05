@@ -11,7 +11,7 @@
       "time": "15 2 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqqd.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqqd.js"
       }
     },
     {
@@ -21,7 +21,7 @@
       "running": true,
       "job": {
         "type": "runjs",
-        "target": "https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js"
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js"
       }
     },
     {
