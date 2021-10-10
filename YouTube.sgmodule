@@ -4,12 +4,11 @@
 
 
 [URL Rewrite]
-(^https?:\/\/(?!redirector)[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+)(ctier=L)(&.+) $1$4 header
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+(&oad|ctier) - reject
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+)&ctier=L(&.+) $1$2 header
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
 
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
-^https?:\/\/\s.youtube.com/api/stats/qoe?.*adformat= - reject
 
 [MITM]
-hostname = %APPEND% *.googlevideo.com,www.youtube.com,s.youtube.com
+hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com
