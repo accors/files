@@ -8,16 +8,16 @@ hostname = api.m.jd.com
 
 ===========Surge=================
 [Script]
-jd_appopen = type=http-request,pattern=functionId=basicConfig, max-size=0, script-path= https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/wskey.js
+jd_appopen = type=http-request,pattern=functionId=basicConfig, max-size=0, script-path= https://raw.githubusercontent.com/accors/files/main/test/get_pin.js
 
 ===================Quantumult X=====================
 [rewrite_local]
 # jd_appopen
-functionId=basicConfig url script-request-header https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/wskey.js
+functionId=basicConfig url script-request-header https://raw.githubusercontent.com/accors/files/main/test/get_pin.js
 
 =====================Loon=====================
 [Script]
-http-request functionId=basicConfig script-path=jd_appopen.js, timeout=3600, tag= https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/wskey.js
+http-request functionId=basicConfig script-path=jd_appopen.js, timeout=3600, tag= https://raw.githubusercontent.com/accors/files/main/test/get_pin.js
 
 */
 const $ = new Env("pin")

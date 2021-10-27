@@ -8,16 +8,16 @@ hostname = api.m.jd.com
 
 ===========Surge=================
 [Script]
-jd_appopen = type=http-request,pattern=functionId=cart, max-size=0, script-path= https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/wskey.js
+jd_appopen = type=http-request,pattern=functionId=cart, max-size=0, script-path= https://raw.githubusercontent.com/accors/files/main/test/get_wskey.js
 
 ===================Quantumult X=====================
 [rewrite_local]
 # jd_appopen
-functionId=cart url script-request-header https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/wskey.js
+functionId=cart url script-request-header https://raw.githubusercontent.com/accors/files/main/test/get_wskey.js
 
 =====================Loon=====================
 [Script]
-http-request functionId=cart script-path=jd_appopen.js, timeout=3600, tag= https://raw.githubusercontent.com/photonmang/quantumultX/master/JDscripts/wskey.js
+http-request functionId=cart script-path=jd_appopen.js, timeout=3600, tag= https://raw.githubusercontent.com/accors/files/main/test/get_wskey.js
 
 */
 const $ = new Env("wskey")
