@@ -1,0 +1,5 @@
+hostname = api.m.jd.com
+
+functionId=cart url script-request-header https://raw.githubusercontent.com/accors/files/main/test/get_wskey.js
+
+functionId=basicConfig url script-request-header https://raw.githubusercontent.com/accors/files/main/test/get_pin.js
