@@ -1,7 +1,14 @@
 #!/bin/bash
-ping -c 3 -w 5 youtube.com
-if [[ $?!=0]];then
+while true
+do
+ping -c 3 -W 5 youtube.com &> /dev/null
+if [ "$?" != "0" ]; then
+echo "不可访问外网，设置GitHub镜像"
 git config --global url."https://hub.fastgit.org/".insteadOf "https://github.com/"
 git config protocol.https.allow always
+break
 else
-return 0;
+echo "可访问外网"
+break
+fi
+done
