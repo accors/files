@@ -3,8 +3,8 @@
 test_method='aes-128-ctr aes-128-cfb aes-128-gcm aes-256-ctr aes-256-cfb aes-256-gcm chacha20 chacha20-ietf chacha20-ietf-poly1305 rc4-md5 xchacha20-ietf-poly1305'
 
 gen_img_file(){
-	dd if=/dev/zero of=/tmpfs/test.img bs=1M count=300
-	ln -sf /tmpfs/test.img /www/test.img
+	dd if=/dev/zero of=/data/data/com.termux/files/home/test/test.img bs=1M count=300
+	ln -sf /data/data/com.termux/files/home/test/test.img /www/test.img
 }
 
 gen_ss_json(){
@@ -25,18 +25,18 @@ launch_ss(){
 	i=0
 	while [ $i -lt 4 ]
 	do
-		ss-server -c $PWD/ss.json >/dev/null 2>&1 &
-		ss-local -c  $PWD/ss.json >/dev/null 2>&1 &
+		$PWD/ssserver -c $PWD/ss.json >/dev/null 2>&1 &
+		$PWD/sslocal -c  $PWD/ss.json >/dev/null 2>&1 &
 		let i++
 	done
 }
 
 stop_ss(){
-	killall ss-server ss-local
+	killall ssserver sslocal
 }
 
 clean_all(){
-	rm -f /tmpfs/test.img /www/test.img $PWD/ss.json $PWD/*curl_info
+	rm -f /data/data/com.termux/files/home/test/test.img /www/test.img $PWD/ss.json $PWD/*curl_info
 }
 
 main(){
