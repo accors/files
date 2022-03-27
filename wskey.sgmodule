@@ -6,4 +6,3 @@ jd_wskey = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action
 
 [MITM]
 hostname = %APPEND% api.m.jd.com
-
