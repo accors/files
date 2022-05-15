@@ -1,2 +1,3 @@
 *.miwifi.com
 *.jd.com
+*.isvjcloud.com
