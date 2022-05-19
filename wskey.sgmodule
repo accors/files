@@ -2,7 +2,7 @@
 #!desc=抓取wskey的模块
 
 [Script]
-jd_wskey = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(genToken|serverConfig)$, max-size=0, script-path= https://raw.githubusercontents.com/chiupam/surge/main/scripts/wskey.js
+jd_wskey = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(genToken|serverConfig)$, max-size=0, script-path= https://gist.githubusercontent.com/accors/c9e6cfcad127f67696707aa283f0c933/raw/b600e4da1fa2e895d556b4224dd75f5cea9c62d7/wskey.js
 
 [MITM]
 hostname = %APPEND% api.m.jd.com
