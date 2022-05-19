@@ -1,34 +1,35 @@
 /*
-
-打开京东app获取自动获取wskey
-在脚本日志查看值
+打开京东以后点击右上角信息标志，
+即可获取完整wskey，新旧版本京东通用
 
 [MITM]
-hostname = api.m.jd.com
+hostname = api-dd.jd.com
 
-===========Surge=================
-[Script]
-jd_appopen = type=http-request,pattern=functionId=cart, max-size=0, script-path= https://raw.githubusercontent.com/accors/files/main/test/get_wskey.js
-
-===================Quantumult X=====================
 [rewrite_local]
-# jd_appopen
-functionId=cart url script-request-header https://raw.githubusercontent.com/accors/files/main/test/get_wskey.js
 
-=====================Loon=====================
-[Script]
-http-request functionId=cart script-path=jd_appopen.js, timeout=3600, tag= https://raw.githubusercontent.com/accors/files/main/test/get_wskey.js
+
+# wskey
+
+
+# 京东
+^https:\/\/api\-dd\.jd\.com\/client\.action\?functionId=getSessionLog url script-request-body https://raw.githubusercontent.com/LJMX996/jd/aaron/utils/get_jd_wskey.js
+
 
 */
+
 const $ = new Env("wskey")
 
 let cookie = $request.headers.Cookie
 let wskey = cookie.match(/(wskey=[^;]*)/)[1]
+let pin = cookie.match(/(pin=[^;]*)/)[1]
 console.log('================')
-console.log(`${wskey};`)
+console.log(`${pin};${wskey};`)
 console.log('================')
-$.msg("wskey获取成功！", "在运行日志中查看")
+console.log(`${pin};`, "的wskey获取中！")
 
+$notify("点击复制" + `${pin};` + "的wskey", "",`${pin};${wskey};`);
+
+    
 function Env(t, e) {
   "undefined" != typeof process && JSON.stringify(process.env).indexOf("GITHUB") > -1 && process.exit(0);
 
