@@ -1,0 +1,8 @@
+#!name=get_wskey
+#!desc=抓取wskey的模块
+
+[Script]
+get_wskey = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(genToken|serverConfig)$, max-size=0, script-path= https://raw.githubusercontents.com/chiupam/surge/main/scripts/wskey.js
+
+[MITM]
+hostname = %APPEND% api.m.jd.com
