@@ -1,0 +1,7 @@
+#!name=get_wskey
+#!desc=抓取wskey的模块
+
+[Script]
+jd_wskey = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=genToken, max-size=0, script-path= https://gist.githubusercontent.com/accors/923ba02c046c7210d9844ea4b3ca2c3a/raw/b36e6d4e8ce8da2c4bba4302037f169b93ea49ad/wskey.js
+[MITM]
+hostname = %APPEND% api.m.jd.com
