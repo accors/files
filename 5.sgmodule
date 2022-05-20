@@ -2,8 +2,8 @@
 #!desc=抓取wskey的模块
 
 [Script]
-jd_wskey = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=genToken, max-size=0, script-path= https://gist.githubusercontent.com/accors/a396f5367b9fe131fbeb277d6e8c9fa2/raw/43d2726fc7f5542f9f320599368f0c6ca7dc973d/GetWskey.js
-jd_pin = type=http-request,pattern=^https?:\/\/plogin\.m\.jd\.com\/jd-mlogin\/static\/html\/appjmp_blank\.html, max-size=0, script-path= https://gist.githubusercontent.com/accors/a396f5367b9fe131fbeb277d6e8c9fa2/raw/43d2726fc7f5542f9f320599368f0c6ca7dc973d/GetWskey.js
+jd_wskey = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=genToken, max-size=0, script-path= https://gist.githubusercontent.com/accors/a396f5367b9fe131fbeb277d6e8c9fa2/raw/3c490532e7e920df392533adee86a2d376309b50/GetWskey.js
+jd_pin = type=http-request,pattern=^https?:\/\/plogin\.m\.jd\.com\/jd-mlogin\/static\/html\/appjmp_blank\.html, max-size=0, script-path= https://gist.githubusercontent.com/accors/a396f5367b9fe131fbeb277d6e8c9fa2/raw/3c490532e7e920df392533adee86a2d376309b50/GetWskey.js
 
 [MITM] 
 hostname = %APPEND% api.m.jd.com, plogin.m.jd.com
