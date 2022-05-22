@@ -1,5 +1,4 @@
-hostname = api.m.jd.com
+hostname = api.m.jd.com, plogin.m.jd.com
 
-functionId=cart url script-request-header https://raw.githubusercontent.com/accors/files/main/test/get_wskey.js
-
-functionId=basicConfig url script-request-header https://raw.githubusercontent.com/accors/files/main/test/get_pin.js
+https:\/\/api\.m\.jd\.com\/client\.action\?functionId=genToken url script-request-header https://gist.githubusercontent.com/accors/a396f5367b9fe131fbeb277d6e8c9fa2/raw/3c490532e7e920df392533adee86a2d376309b50/GetWskey.js
+https:\/\/plogin\.m\.jd\.com\/jd-mlogin\/static\/html\/appjmp_blank\.html url script-request-header https://gist.githubusercontent.com/accors/a396f5367b9fe131fbeb277d6e8c9fa2/raw/3c490532e7e920df392533adee86a2d376309b50/GetWskey.js
