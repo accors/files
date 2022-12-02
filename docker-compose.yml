@@ -1,18 +1,35 @@
 version: "2.0"
 services:
-  jd:
-    image: accors/dhhd:v1
-    container_name: jd
+  qb1:
+    image: nevinee/qbittorrent:4.3.9 # 如想参与测试工作可以指定nevinee/qbittorrent:unstable，如想使用集成了iyuu的版本请指定nevinee/qbittorrent:iyuu
+    container_name: qbittorrent1
     restart: always
     tty: true
-    network_mode: bridge
-    hostname: jd
+    network_mode: host
+    hostname: qbitorrent-OP
     volumes:
-      - ./config:/jd/config
-      - ./log:/jd/log
-      - ./own:/jd/own
-      - ./scripts:/jd/scripts
-      - ./jbot/diy:/jd/jbot/diy
-    environment: 
-      - ENABLE_HANGUP=false  # 是否在启动容器时自动启动挂机程序
-      - ENABLE_TG_BOT=true  # 是否在启动容器时自动启动TG BOT
+      - /home/accors/qb/data:/data      # 配置保存目录
+    environment:          # 下面未列出的其他环境变量请根据环境变量清单自行添加
+      - WEBUI_PORT=8080   # WEBUI控制端口，可自定义
+      - BT_PORT=34567     # BT监听端口，可自定义
+      - PUID=0         # 输入id -u可查询，群晖必须改
+      - PGID=0          # 输入id -g可查询，群晖必须改
+      - ENABLE_AUTO_CATEGORY=false # 关闭自动按Tracker分类
+      - TG_BOT_TOKEN=1468762456:AAETA8BZgek77PQml2gaPPHRJShIAzenwJ4
+      - TG_USER_ID=689240552
+      - TRACKER_ERROR_COUNT_MIN=10 #Tracker出错超过10个通知
+      - EXTRA_PACKAGES=htop nano
+  qb2:
+    image:  nevinee/qbittorrent:4.3.5
+    container_name: qbittorrent1
+    restart: always
+    tty: true
+    network_mode: host
+    hostname: qbitorrent
+    volumes:
+      - /home/friends/qb/data:/data      # 配置保存目录
+    environment:          # 下面未列出的其他环境变量请根据环境变量清单自行添加
+      - WEBUI_PORT=8081   # WEBUI控制端口，可自定义
+      - BT_PORT=34568     # BT监听端口，可自定义
+      - PUID=0         # 输入id -u可查询，群晖必须改
+      - PGID=0          # 输入id -g可查询，群晖必须改
