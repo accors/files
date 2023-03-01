@@ -1,5 +1,6 @@
 alembic==1.8.1
 aniso8601==9.0.1
+anitopy==2.1.1
 APScheduler==3.9.1
 asttokens==2.0.8
 async-generator==1.10
