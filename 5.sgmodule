@@ -1,8 +1,8 @@
 #!name=get_wskey
 #!desc=抓取wskey的模块。使用方法：打开京东APP 我的->右上角[设置]按钮
 
-[Script]
-jd_wskey = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=myjdSetBusiness, max-size=0, requires-body=1, script-path= https://gist.githubusercontent.com/accors/a396f5367b9fe131fbeb277d6e8c9fa2/raw/c94e8b6263905a8806d67f1a590d688a50ad616d/GetWskey.js
+jd_wskey = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=genToken, max-size=0, script-path= https://gist.githubusercontent.com/accors/a396f5367b9fe131fbeb277d6e8c9fa2/raw/c94e8b6263905a8806d67f1a590d688a50ad616d/GetWskey.js
+jd_pin = type=http-request,pattern=^https?:\/\/plogin\.m\.jd\.com\/jd-mlogin\/static\/html\/appjmp_blank\.html, max-size=0, script-path= https://gist.githubusercontent.com/accors/a396f5367b9fe131fbeb277d6e8c9fa2/raw/c94e8b6263905a8806d67f1a590d688a50ad616d/GetWskey.js
 
 [MITM] 
 hostname = %APPEND% api.m.jd.com, plogin.m.jd.com, api-dd.jd.com
