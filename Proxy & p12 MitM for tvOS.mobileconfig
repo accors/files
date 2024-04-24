@@ -44,6 +44,10 @@
 			<false/>
 			<key>IsHotspot</key>
 			<false/>
+			<key>Password</key>
+			<string>替换为您的WiFi网络的密码</string>
+			<key>PayloadDescription</key>
+			<string>配置 Wi-Fi 设置</string>
 			<key>PayloadDisplayName</key>
 			<string>Wi-Fi</string>
 			<key>PayloadIdentifier</key>
@@ -54,8 +58,18 @@
 			<string>6A7E9224-E17E-40AC-890A-F3679D5E7FDC</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
+			<key>ProxyServer</key>
+			<string>替换为您的代理服务器IP地址</string>
+			<key>ProxyServerPort</key>
+			<integer>替换为您的代理服务器HTTP代理端口</integer>
+			<key>ProxyType</key>
+			<string>Manual</string>
+			<key>SSID_STR</key>
+			<string>替换为您的WiFi网络名称</string>
 		</dict>
 	</array>
+	<key>PayloadDescription</key>
+	<string>设置tvOS的代理服务器及MitM证书</string>
 	<key>PayloadDisplayName</key>
 	<string>Proxy &amp; MitM for tvOS</string>
 	<key>PayloadIdentifier</key>
