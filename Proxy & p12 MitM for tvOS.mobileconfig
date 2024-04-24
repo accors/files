@@ -65,7 +65,7 @@
 			<key>ProxyType</key>
 			<string>Manual</string>
 			<key>SSID_STR</key>
-			<string>替换为您的WiFi网络名称</string>
+			<string>TP-LINK_5G_806</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
