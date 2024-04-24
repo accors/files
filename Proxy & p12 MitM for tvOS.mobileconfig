@@ -64,8 +64,6 @@
 			<integer>替换为您的代理服务器HTTP代理端口</integer>
 			<key>ProxyType</key>
 			<string>Manual</string>
-			<key>SSID_STR</key>
-			<string>TP-LINK_5G_806</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
