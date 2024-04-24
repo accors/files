@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>请确认此配置文件的证书及代理服务器地址及端口与您的Shadowrocket, Loon, Quantumult X, Surge 或 Stash的设置相同后再安装,安装后请在本Apple TV的设置-&gt;通用-&gt;关于-&gt;证书信任设置中,将此描述文件中的证书状态变更为“可信”</string>
+	</dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>Password</key>
+			<string>294EAD05</string>
+			<key>PayloadCertificateFileName</key>
+			<string>root CA for MitM.p12</string>
+			<key>PayloadContent</key>
+			<data>
+			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
+			</data>
+			<key>PayloadDescription</key>
+			<string>添加 PKCS#12 格式的证书</string>
+			<key>PayloadDisplayName</key>
+			<string>root CA for MitM.p12</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.security.pkcs12.6136134F-4EE5-4A44-9BE9-4CDB82C6A053</string>
+			<key>PayloadType</key>
+			<string>com.apple.security.pkcs12</string>
+			<key>PayloadUUID</key>
+			<string>6136134F-4EE5-4A44-9BE9-4CDB82C6A053</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>AutoJoin</key>
+			<true/>
+			<key>CaptiveBypass</key>
+			<false/>
+			<key>DisableAssociationMACRandomization</key>
+			<false/>
+			<key>EncryptionType</key>
+			<string>Any</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>IsHotspot</key>
+			<false/>
+			<key>PayloadDisplayName</key>
+			<string>Wi-Fi</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.wifi.managed.6A7E9224-E17E-40AC-890A-F3679D5E7FDC</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadUUID</key>
+			<string>6A7E9224-E17E-40AC-890A-F3679D5E7FDC</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Proxy &amp; MitM for tvOS</string>
+	<key>PayloadIdentifier</key>
+	<string>DualSubs.Profile</string>
+	<key>PayloadOrganization</key>
+	<string>DualSubs</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>EC05DA41-4A75-4083-B574-C8389C7266FE</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
