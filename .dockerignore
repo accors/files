@@ -1,0 +1,8 @@
+.git
+**/.git
+id_rsa*
+**/id_rsa*
+.ssh
+**/.ssh
+*.pem
+**/*.pem
